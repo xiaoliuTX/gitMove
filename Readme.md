@@ -29,7 +29,7 @@ pip3 install git-filter-repo
 2.移动目录/重命名文件
 
 ```
-git filter-repo --path --path-rename OLD_NAME:NEW_NAME
+git filter-repo --path-rename OLD_NAME:NEW_NAME --force
 ```
 
 注意一定要在.git文件所在目录下执行此命令。
@@ -37,5 +37,6 @@ git filter-repo --path --path-rename OLD_NAME:NEW_NAME
 3.重新添加orgin并强推
 
 ```
-
+git remote add <name> <url>
+git push origin master --force
 ```
